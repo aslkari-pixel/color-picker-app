@@ -8,7 +8,7 @@ describe("Color Project Test Suite", () => {
   test("1. Should display Empty Value text when input is empty", () => {
     render(<Content ginput="" hexValue="" />);
     const textElement = screen.getByText(/Empty Value!/i);
-    expect(textElement).toBeTruthy(false);
+    expect(textElement).toBeTruthy();
   });
 
   // Test 2: Content component with color values
